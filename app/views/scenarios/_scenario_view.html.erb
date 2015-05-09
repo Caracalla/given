@@ -1,0 +1,135 @@
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title">
+						<a href="#collapseThree" class="collapsed" data-toggle="collapse" data-parent="#accordion">
+							Scenario 1: Some things happen
+						</a>
+					</h4>
+				</div>
+
+				<div id="collapseThree" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<form>
+							<div class="row">
+								<!-- Given -->
+								<div class="col-md-4">
+									<dl>
+										<div class="row">
+											<div class="col-xs-2">
+												<dt>Given</dt>
+											</div>
+											<div class="col-xs-10">
+												<dd>
+													<#%= @scenario.given %>
+												</dd>
+											</div>
+										</div>
+
+										<div class="row">
+											<br>
+											<div class="col-xs-2">
+												<dt>And</dt>
+											</div>
+
+											<div class="col-xs-10">
+												<dd>Whatever man.</dd>
+											</div>
+										</div>
+									</dl>
+
+									<hr class="hidden-md hidden-lg">
+								</div>
+
+								<!-- When -->
+								<div class="col-md-4">
+									<dl>
+										<div class="row">
+											<div class="col-xs-2">
+												<dt>When</dt>
+											</div>
+											<div class="col-xs-10">
+												<dd>
+												<#%= @scenario.when %>
+												</dd>
+											</div>
+										</div>
+									</dl>
+
+									<hr class="hidden-md hidden-lg">
+								</div>
+
+								<!-- Then -->
+								<div class="col-md-4">
+									<dl>
+										<div class="row">
+											<div class="col-xs-2">
+												<dt>Then</dt>
+											</div>
+											<div class="col-xs-10">
+												<dd>
+													<#%= @scenario.then %>
+												</dd>
+												
+												<div class="form-group">
+													<div class="row">
+														<div class="col-xs-6">
+															<div class="radio pull-right">
+																<label>
+															    <input type="radio" name="options1" value="option1">
+															    Pass
+															  </label>
+															</div>
+														</div>
+
+														<div class="col-xs-6">
+															 <div class="radio">
+																<label>
+															    <input type="radio" name="options1" value="option2">
+															   Fail
+															 </label>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-xs-2">
+												<dt>And</dt>
+											</div>
+											<div class="col-xs-10">
+												<dd>Whatever man.</dd>
+
+												<div class="row">
+													<div class="form-group">
+														<div class="row">
+															<div class="col-xs-6">
+																<div class="radio pull-right">
+																	<label>
+																    <input type="radio" name="options2" value="option1">
+																    Pass
+																  </label>
+																</div>
+															</div>
+
+															<div class="col-xs-6">
+																 <div class="radio">
+																	<label>
+																    <input type="radio" name="options2" value="option2">
+																   Fail
+																 </label>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</dl>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
